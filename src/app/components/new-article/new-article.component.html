@@ -1,0 +1,14 @@
+<!-- <ol class="breadcrumb">
+    <li class="breadcrumb-item"> <a>Articles</a></li>
+    <li class="breadcrubm-item active"> /Add</li>
+</ol> -->
+<h1 class="display-4">Add Article</h1>
+<div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" name="title" class="form-control" [(ngModel)]="articlesModel.title">
+</div>
+<div class="form-group">
+    <label for="body">Desription</label>
+    <textarea name="title" class="form-control" [(ngModel)]="articlesModel.description"></textarea>
+</div>
+<button (click)="addArticle()">Add</button>

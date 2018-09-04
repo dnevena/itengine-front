@@ -1,0 +1,13 @@
+
+<h1 class="display-4">Edit Article</h1>
+<form [formGroup] = "angForm">
+<div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" [formControl]="title">
+</div>
+<div class="form-group">
+    <label for="body">Desription</label>
+    <textarea class="form-control" [formControl]="description"></textarea>
+</div>
+<button (click)="editArticle()">Edit</button>
+</form>
